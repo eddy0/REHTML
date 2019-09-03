@@ -16,6 +16,12 @@ html {
     font-weight: 300;
     text-rendering: optimizeLegibility;
 }
+
+.clearfix:after {
+    content: '';
+    display: block;
+    clear: both;
+}
 /* ------------------------------------------- */
 /*   -------------  header ------------------- */
 /* -------------------------------------------- */
@@ -77,7 +83,6 @@ h3 {
     /* word-spacing: 1px; */
     margin-bottom: 15%;
 }
-
 
 
 .box {
@@ -192,3 +197,115 @@ h3 {
 .main-nav li a:hover {
     border-bottom: 2px solid #e67e22;
 }
+
+
+/* ------------------------------------ */
+/* features */
+/* ------------------------------------ */
+
+.section-features  .long-copy{
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------ */
+/* meals */
+/* ------------------------------------ */
+
+
+.section-meals {
+    padding: 0;
+}
+
+.meal-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meal-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-showcase li figure {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-showcase li img {
+    opacity: 0.5;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-showcase li img:hover {
+    opacity: 1;
+    transform: scale(1.03);
+}
+
+
+/* ------------------------------------ */
+/* steps */
+/* ------------------------------------ */
+
+
+.section-steps {
+    margin-top: 4px;
+}
+
+.step-box {
+    /* margin-top: 30px; */
+}
+
+
+.step-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.step-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 30px;
+}
+
+.works-step div {
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 150%;
+    padding: 3px;
+    float: left;
+    margin-right: 25px;
+}
+
+.works-step:last-of-type {
+    margin-bottom: 80px;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+
+/* ------------------------------------ */
+/* cites */
+/* ------------------------------------ */
+
