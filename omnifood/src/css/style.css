@@ -112,7 +112,14 @@ h3 {
     display: block;
     color: #e67e22;
     margin-bottom: 10px;
-    }
+}
+
+.icon-small {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+}
+
 
 
 /* ------------------------------------ */
@@ -309,3 +316,29 @@ h3 {
 /* cites */
 /* ------------------------------------ */
 
+
+.section-cites img {
+    height:auto;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+.city-feature i {
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    font-size: 120%;
+    line-height: 120%;
+    color: #e67e22;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+
+.city-feature a {
+    text-decoration: none;
+    color: inherit;
+}
