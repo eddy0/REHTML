@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/grid.css" />
     <link rel="stylesheet" href="./src/css/ionicons.min.css" />
+    <link rel="stylesheet" href="./src/css/queries.css" />
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet" />
     <title>food</title>
 </head>
 
 <body>
-    <header class="clearfix">
-        <div class="pic"></div>
+    <header>
+        <div class="fix"></div>
         <nav>
             <div class="row">
                 <img src="src/img/logo-white.png" alt="logo" class="logo" />
@@ -367,67 +368,69 @@
         </div>
     </section>
     <section class="section-form">
-        <div class="row">
-            <h2>We're happy to hear from you</h2>
-        </div>
-        <div class="row">
-            <form action="#" method="POST" class="contact-form">
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="name">Name</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" name="name" id="name" placeholder="Your name" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <input type="text" name="email" id="email" placeholder="Your Email" required>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col span-1-of-3">
-                        <label for="find-us">How did you find us?</label>
-                    </div>
-                    <div class="col span-2-of-3">
-                        <select name="find-us" id="find-us">
-                            <option value="friends">Friends</option>
-                            <option value="search">Search Engine</option>
-                            <option value="ad">Advaertisment</option>
-                            <option value="other">other     </option>
-                        </select>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <h2>We're happy to hear from you</h2>
+            </div>
+            <div class="row">
+                <form action="#" method="POST" class="contact-form">
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="news">Newsletter</label>
+                            <label for="name">Name</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="checkbox" name="news" id="news"> yes pls
+                            <input type="text" name="name" id="name" placeholder="Your name" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label for="message">Drop us a line</label>
+                            <label for="email">Email</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <textarea name="message" id="message" placeholder="your message" cols="30" rows="10"></textarea>
+                            <input type="text" name="email" id="email" placeholder="Your Email" required>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col span-1-of-3">
-                            <label >&nbsp;</label>
+                            <label for="find-us">How did you find us?</label>
                         </div>
                         <div class="col span-2-of-3">
-                            <input type="submit" class="btn btn-full" value="send it">
+                            <select name="find-us" id="find-us">
+                                <option value="friends">Friends</option>
+                                <option value="search">Search Engine</option>
+                                <option value="ad">Advaertisment</option>
+                                <option value="other">other     </option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="news">Newsletter</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="checkbox" name="news" id="news"> yes pls
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="message">Drop us a line</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea name="message" id="message" placeholder="your message" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label >&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" class="btn btn-full" value="send it">
+                            </div>
                         </div>
                     </div>
-                </div>
-            </form>
-        </div>
-    </section>
+                </form>
+            </div>
+            </div>
+        </section>
     <footer >
         <div class="row">
             <div class="col span-1-of-2">

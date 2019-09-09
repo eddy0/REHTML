@@ -21,7 +21,9 @@ html {
     text-rendering: optimizeLegibility;
 }
 
-.clearfix:after {
+.clearfix:after,
+.clearfix::before
+{
     content: '';
     display: block;
     clear: both;
@@ -36,38 +38,42 @@ html {
 
 section {
     padding: 50px 0;
+    background-color: #fff;
 }
 
-header {
+/* header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 100vh;
-}
-/* 
- header .pic {
-    height: 100%;
+} */
+
+ header  {
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
 
-header .pic::before {
-    content: '';
+.fix {
+    /* height: 100vh; */
+}
+
+
+.fix::before {
+    content: " ";
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/hero.jpg);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center center;
     background-size: cover;
-    background-color: white;
-
-    height: 100%;
-    left: 0;
     position: fixed;
-    top: 0;
+    height: 100%;
     width: 100%;
+    left: 0;
+    top: 0;
     will-change: transform;
     z-index: -1;
-  }  */
+  }   
 
 h1,
 h2,
@@ -78,7 +84,6 @@ h3 {
 
 h1 {
     letter-spacing: 1px;
-
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
@@ -294,7 +299,7 @@ input[type=submit] {
 
 
 .section-steps {
-    margin-top: 4px;
+    margin-top: 40px;
 }
 
 .step-box {
@@ -492,9 +497,12 @@ cite img {
 /* section-form */
 /* ------------------------- */
 
-.section-form {
+
+
+.container {
     width: 60%;
     margin: 0 auto;
+
 }
 
 
